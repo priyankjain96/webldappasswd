@@ -10,6 +10,6 @@ git clone git@github.com:cyberorg/webldappasswd.git
 
 cp ldap.php-sample ldap.php
 
-Change the text in bold to point to your correct ldap domain in ldap.php
+Change the text in *bold* below to point to your correct ldap domain in ldap.php
 
-$ldapFullUsername = "uid=$userLogin,ou=people,**dc=capitalvia,dc=com**";
+$ldapFullUsername = "uid=$userLogin,ou=people,**dc=digitalairlines,dc=com**";
