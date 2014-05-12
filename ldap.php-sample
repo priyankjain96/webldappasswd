@@ -1,0 +1,12 @@
+<?php
+//
+//  Rename this file to ldap.php
+//  and assign proper values.
+//
+
+$ldapPasswd    = '/usr/bin/ldappasswd';
+
+// BindDN, based on predefined $userLogin value
+$ldapFullUsername = "uid=$userLogin,ou=people,dc=digitalairlines,dc=com";
+
+?>

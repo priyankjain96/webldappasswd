@@ -1,0 +1,55 @@
+<html>
+<head>
+<title>Web-frontend for ldappasswd</title>
+</head>
+<body>
+<h1>Web-frontend for ldappasswd</h1>
+
+<p>In my own environment, users accesses their mailboxes
+on <a href="http://www.dovecot.org">Dovecot</a> server via POP3, IMAP
+and WebMail (<a href="http://www.ilohamail.org">IlohaMail</a> over IMAP).</p>
+
+<p>Dovecot authorizes folks via LDAP, but there is no way for ordinal users
+to change password because IMAP nor POP3 doesn't provides that feature
+nor gives access to LDAP layer.</p>
+
+<p>So, we need a utility that is called via Web interface and accesses LDAP directly.
+Well, it's time for writing yet another stupid php wrapper :-)</p>
+
+<h3>Download</h3>
+
+<p>Webldappasswd is distributed now as public domain, but remember that I prefer
+<a href="http://www.gnu.org/licenses/gpl.html">GNU GPL</a>.</p>
+
+<p><b><a href="webldappasswd_20060329.tar.gz">Download version 20060329</a></b> (3700 bytes).
+
+<h3>Install</h3>
+
+<p>First, you need Web server with PHP.</p>
+
+<p>Second, you need ldappasswd utility from
+<a href="http://www.openldap.org">OpenLDAP distribution</a>.</p>
+
+<p>Third, you need PHP safe mode disabled (possibly partially for directory
+where you place webldappasswd) for calling <tt>ldappasswd</tt> binary.</p>
+
+<p>Fourth, you must rename <tt>ldap.php-sample</tt> to <tt>ldap.php</tt>
+and edit them to set proper values for your own environment.</p>
+
+<p>Fifth, if you want to localize it, create message file
+in subdirectory named <tt>lang</tt>.</p>
+
+<h3>Contact</h3>
+
+<p>My email is ilya_evseev(at)mail(dot)ru.</p>
+
+<p><a href="http://ilya-evseev.narod.ru/posix/webldappasswd/">Project homepage</a></p>
+
+<p><a href="http://svn1.homelinux.net">Subversion repository</a></p>
+
+<hr>
+
+<p><i>Enjoy!</i></p>
+
+</body>
+</html>
