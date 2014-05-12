@@ -6,6 +6,7 @@ Web frontend to change ldap password, based on http://ilya-evseev.narod.ru/posix
 Minor changes to make it work with SUSE ldap server.
 
 cd /srv/www/htdocs
+
 git clone git@github.com:cyberorg/webldappasswd.git
 
 cp ldap.php-sample ldap.php
