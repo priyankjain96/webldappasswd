@@ -13,7 +13,7 @@ error_reporting(E_ALL);
 ////////   Language-dependent strings   ////////
 
 $textTitle               = 'Change password on '.$_SERVER['SERVER_NAME'];
-$textHeader              = 'Change your password on '.$_SERVER['SERVER_NAME'];
+$textHeader              = 'Change your system password on cloud server';
 $msgEnterLogin           = 'Login';
 $msgEnterCurrentPassword = 'Current password';
 $msgEnterNewPassword     = 'New password';
@@ -52,6 +52,7 @@ require('./ldap.php');
 <title><?php echo $textTitle;?></title>
 </head>
 <body>
+<center><h2><?php echo "Welcome to CapitalVia Cloud Server";?></h2></center>
 <center><h2><?php echo $textHeader;?></h2></center>
 <?php
 
