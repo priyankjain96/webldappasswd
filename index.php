@@ -51,7 +51,7 @@ require('./ldap.php');
 
 <title><?php echo $textTitle;?></title>
 </head>
-<body>
+<body style="background-color:#DCE7EB">
 <center><h2><?php echo $textHeader;?></h2></center>
 <?php
 
